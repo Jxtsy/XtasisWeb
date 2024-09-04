@@ -1,0 +1,124 @@
+.bodyContainer{
+    font-family: 'Raleway', sans-serif;
+    min-height: 400px;
+    background-image: linear-gradient(to top,  0%,#fff8e7 100%);
+    background-color: black; 
+    background-repeat: no-repeat;
+    display: flex;
+}
+.login{
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    background-image: linear-gradient(to left, #2ef8a0, #652ec7);
+    overflow: hidden;
+    border-radius: 1em;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+
+    animation: mostrar 1.5s ease-in-out;
+}
+.registro{
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    overflow: hidden;
+    padding: .2em;
+    border-radius: 1em;
+    background-image: linear-gradient(to left, #652ec7, #2ef8a0);
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+
+    animation: mostrar 1.5s ease-in-out;
+}
+
+@keyframes mostrar {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .70em;
+    text-align: center;
+}
+.title{
+    font-size: 2.3rem;
+    color: beige;
+    font-weight: bold;
+}
+
+.Title{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    text-justify: auto;
+
+}
+
+.tablaR{
+    background-image: linear-gradient(to left, #652ec7, #2ef8a0);
+}
+
+.paragraph{
+    margin: .1em;
+    color: beige;
+}
+.inputStyle{
+    margin: 10%;
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: solid;
+    border-color: black;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+.btnSubmit{
+    background-color: black;
+    border-color: black;
+    font-weight: 600;
+}
+.btnSubmit:hover{
+    background-color: black;
+    border-color: black;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.inputLink{
+    width: 30%;
+    outline: none;
+    border: solid transparent;
+    background-color: #652ec7;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+.inputLink:hover{
+    background-color: #c501e2;
+    border: solid transparent;
+}
